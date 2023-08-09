@@ -39,7 +39,8 @@ body {
 /* Podemos fazer todoas essas funções em apenas uma linha 
 Pelo comando background: color image repeat posicion/size */
 
-background: var(--bg-url) no-repeat top center/cover;
+    background: var(--bg-url) no-repeat top center/cover;
+    height: 100vh;
 
 }
 
@@ -187,4 +188,16 @@ footer {
     padding: 24px 0;
     text-align: center;
     font-size: 12px;
+}
+
+/* Media Queries */
+
+@media (min-width: 700px) {
+    :root {
+        --bg-url: url(./Projeto/assets/bg-desktop.jpg);
+    }
+
+    .light {
+        --bg-url: url(./Projeto/assets/bg-desktop-light.jpg);
+    }
 }
